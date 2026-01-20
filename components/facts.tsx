@@ -22,9 +22,7 @@ export default function Facts() {
                 </h3>
               </div>
               <p className="year-para">
-               Working with startups and established companies across Kenya and remotely, 
-               I&apos;ve delivered solutions that balance technical excellence with business needs 
-               and user satisfaction.
+                I deliver user-focused, business-aligned solutions for startups and established companies in Kenya and remotely.
               </p>
             </div>
           </div>
