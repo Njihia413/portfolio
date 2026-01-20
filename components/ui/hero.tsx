@@ -42,7 +42,7 @@ export default function Hero() {
                     </span>
                   </span>
                 </h1>
-                <p className="disc tmp-scroll-trigger tmp-title-split tmp-fade-in animation-order-3">
+                <p className="disc tmp-scroll-trigger tmp-fade-in animation-order-3">
                   A <span>Software Engineer </span> passionate about crafting high-performance applications that users love. 
                   I combine strong sensibilities with full-stack expertise to build scalable solutions that drive <span>measurable </span> impact.
                   
