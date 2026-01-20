@@ -9,12 +9,18 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "bootstrap": "^5.3.8",
+    "gsap": "^3.14.2",
     "next": "16.1.1",
+    "odometer": "^0.4.8",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "react-toastify": "^11.0.5",
+    "sass": "^1.97.2"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
+    "@types/bootstrap": "^5.2.10",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
