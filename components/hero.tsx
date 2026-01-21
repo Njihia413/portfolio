@@ -44,7 +44,7 @@ export default function Hero() {
                 </h1>
                 <p className="disc tmp-scroll-trigger tmp-fade-in animation-order-3">
                   A <span>Software Engineer </span> passionate about crafting high-performance applications that users love. 
-                  I combine strong sensibilities with full-stack expertise to build scalable solutions that drive <span>measurable </span> impact.
+                  I combine strong design sensibilities with full-stack expertise to build scalable solutions that drive <span>measurable </span> impact.
                   
                 </p>
                 <div className="button-area-banner-two tmp-scroll-trigger tmp-fade-in animation-order-4">
