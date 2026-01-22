@@ -614,6 +614,56 @@
         }
     }
 
+    // Outline hover effect - transparent bg with primary border/text/icons
+    &.btn-hover-outline {
+        border: 2px solid transparent; // Start transparent to match layout if needed, or primary
+        // actually existing code was border: 2px solid transparent;
+        line-height: 56px; // Adjust for border
+        
+        &:hover {
+            background: transparent;
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+            
+            .btn-text {
+                color: var(--color-primary);
+            }
+            
+            .btn-icon i {
+                color: var(--color-primary);
+            }
+        }
+    }
+
+    // New Primary Outline Button (Hire Me)
+    // Default: Outline (Primary Border + Text)
+    // Hover: Filled (Primary Bg + White Text)
+    &.btn-primary-outline {
+        background: transparent;
+        border: 2px solid var(--color-primary);
+        color: var(--color-primary);
+        line-height: 56px;
+
+        .btn-text, i {
+             color: var(--color-primary);
+             transition: all 0.4s ease-in-out;
+        }
+
+        &:hover {
+            background: var(--color-primary);
+            transform: translateY(-2px); 
+            // Text and icons become white on hover (default tmp-btn style usually involves white text on primary)
+             
+            .btn-text, i {
+                color: var(--color-white);
+            }
+            
+            .btn-icon i {
+                color: var(--color-white);
+            }
+        }
+    }
+
 
 }
 
