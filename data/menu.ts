@@ -10,4 +10,5 @@ export const menuItems: MenuItem[] = [
   { label: "Home", href: "/", isLink: true },
   { label: "Professional Impact", href: "#impact", isLink: false },
   { label: "Testimonials", href: "#testimonials", isLink: false },
+  { label: "Experience", href: "#experience", isLink: false },
 ];
