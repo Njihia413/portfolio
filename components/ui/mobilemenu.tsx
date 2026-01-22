@@ -128,6 +128,9 @@ export default function MobileMenu() {
               <a href="https://github.com/Njihia413" target="_blank" rel="noopener noreferrer">
                 <i className="fa-brands fa-github" />
               </a>
+              <a href="mailto:maureennjihia468@gmail.com">
+                <i className="fa-solid fa-envelope" />
+              </a>
             </div>
           </div>
           {/* social area end */}
