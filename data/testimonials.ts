@@ -3,7 +3,7 @@ export const testimonials3 = [
   {
     name: "Angello Obel",
     role: "CTO, Fresh Networks",
-    text: "",
+    text: "Maureen is quick to learn and adapt with a brilliant analytical mind. Her passion for new technologies and diligent attention to detail make her a genuine pleasure to work with and a true positive on any team.",
     animationOrder: "1",
   },
   {
