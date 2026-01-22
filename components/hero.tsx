@@ -49,7 +49,7 @@ export default function Hero() {
                 </p>
                 <div className="button-area-banner-two tmp-scroll-trigger tmp-fade-in animation-order-4">
                   <a
-                    className="tmp-btn hover-icon-reverse radius-round download-icon"
+                    className="tmp-btn hover-icon-reverse radius-round download-icon btn-hover-outline"
                     href="/assets/pdf/Maureen Njihia.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -61,6 +61,21 @@ export default function Hero() {
                       </span>
                       <span className="btn-icon">
                         <i className="fa-regular fa-arrow-down" />
+                      </span>
+                    </span>
+                  </a>
+                  <a
+                    className="tmp-btn hover-icon-reverse radius-round btn-primary-outline ml--20"
+                    href="#contact"
+                    style={{ marginLeft: "20px" }}
+                  >
+                    <span className="icon-reverse-wrapper">
+                      <span className="btn-text">Schedule a call</span>
+                      <span className="btn-icon">
+                        <i className="fa-regular fa-arrow-right" />
+                      </span>
+                      <span className="btn-icon">
+                        <i className="fa-regular fa-arrow-right" />
                       </span>
                     </span>
                   </a>
