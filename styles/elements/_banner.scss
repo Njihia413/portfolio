@@ -1660,6 +1660,23 @@
   }
 }
 
+// Mobile stacking for Hero Buttons
+.button-area-banner-two {
+    @media #{variables.$sm-layout} {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+        
+        .tmp-btn {
+            width: 100%;
+            margin-left: 0 !important; // Override ml--20
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
 .index-nine {
   @media only screen and (max-width: 1400px) {
     .tab-content-overlay-to-top {
