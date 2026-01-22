@@ -5,6 +5,8 @@ import React, { useEffect } from "react";
 import SplitText from "@/utils/splittext";
 import gsap, { Back } from "gsap";
 import WOW from "@/utils/wow";
+import Sidebar from "@/components/ui/sidebar";
+import MobileMenu from "@/components/ui/mobilemenu";
 
 interface LayoutWrapperProps {
   children: React.ReactNode;
@@ -405,5 +407,11 @@ export default function LayoutWrapper({ children }: LayoutWrapperProps) {
     wow.init();
   }, [pathname]);
 
-  return <>{children}</>;
+  return (
+    <>
+      <Sidebar />
+      <MobileMenu />
+      {children}
+    </>
+  );
 }
