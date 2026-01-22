@@ -53,7 +53,7 @@ export default function Testimonials() {
   const isMobile = useIsMobile();
 
   return (
-    <section className="testimonial-area rpp-banner-two-area tmp-section-gapTop tmp-section-gapBottom">
+    <section id="testimonials" className="testimonial-area rpp-banner-two-area tmp-section-gapTop tmp-section-gapBottom">
       <div className="container">
         <div className="section-head mb--50">
           <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
