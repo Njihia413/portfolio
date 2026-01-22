@@ -3,6 +3,8 @@
 import React from "react";
 import Link from "next/link";
 import Nav from "./nav";
+import { openSidebar } from "@/utils/toggleSidebar";
+import { openMobilemenu } from "@/utils/toggleMobilemenu";
 
 interface HeaderProps {
   darkLogo?: string;
@@ -13,13 +15,6 @@ export default function Header({
   darkLogo,
   lightLogo,
 }: HeaderProps) {
-  const openSidebar = () => {
-    console.log("Sidebar opened");
-  };
-
-  const openMobilemenu = () => {
-    console.log("Mobile menu opened");
-  };
 
   return (
     <header className="tmp-header-area-start header-one header--sticky header--transparent">
