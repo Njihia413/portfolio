@@ -681,6 +681,13 @@
 .skills-wrapper {
     --bs-gutter-x: 1rem;
     --bs-gutter-y: 1rem;
+    
+    @media (min-width: 992px) {
+        &.row-cols-lg-8 > * {
+            flex: 0 0 auto;
+            width: 12.5%;
+        }
+    }
 }
 
 .skill-style-border-card{
@@ -690,20 +697,31 @@
     transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1), box-shadow 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
     height: 100%;
     text-align: center;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     
     &:hover {
          transform: translateY(-5px);
     }
     
+    .skill-inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
     img{
         display: block;
-        margin: auto auto 15px auto;
-        max-width: 50px;
-        max-height: 50px;
+        margin: 0 auto 10px auto;
+        max-width: 40px;
+        max-height: 40px;
     }
     .name {
         margin-bottom: 0;
-        font-size: 16px;
+        font-size: 13px;
         font-weight: 500;
     }
 }
