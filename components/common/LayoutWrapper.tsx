@@ -249,8 +249,9 @@ export default function LayoutWrapper({ children }: LayoutWrapperProps) {
     const cards = document.querySelectorAll<HTMLElement>(".tmponhover");
     const handleCardMouseMove = (e: MouseEvent) => {
       const tmpOnHover = e.currentTarget as HTMLElement;
-      const x = e.pageX - tmpOnHover.offsetLeft;
-      const y = e.pageY - tmpOnHover.offsetTop;
+      const rect = tmpOnHover.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
       tmpOnHover.style.setProperty("--x", x + "px");
       tmpOnHover.style.setProperty("--y", y + "px");
     };
