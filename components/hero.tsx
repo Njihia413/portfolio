@@ -24,7 +24,14 @@ export default function Hero() {
             </div>
             <div className="col-lg-7 order-lg-1 mt--100">
               <div className="inner">
-                <span className="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1">
+                <div className="availability-badge">
+                  <span className="ping-dot">
+                    <span className="ping-animation" />
+                    <span className="ping-core" />
+                  </span>
+                  <span className="badge-text">Available for projects &amp; opportunities</span>
+                </div>
+                <span className="sub-title tmp-scroll-trigger tmp-fade-in animation-order-1" style={{ display: 'block' }}>
                   Hello
                 </span>
                 <h1 className="title tmp-scroll-trigger tmp-fade-in animation-order-2">
