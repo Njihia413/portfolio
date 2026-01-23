@@ -5,7 +5,7 @@ import React from "react";
 
 export default function Experience() {
   return (
-    <section className="resume-section tmp-section-gapTop" id="experience">
+    <section className="resume-section tmp-section-gapTop tmp-section-gapBottom" id="experience">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
