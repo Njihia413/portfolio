@@ -678,21 +678,32 @@
     }
 }
 
+.skills-wrapper {
+    --bs-gutter-x: 1rem;
+    --bs-gutter-y: 1rem;
+}
+
 .skill-style-border-card{
     border-radius: 5px;
-    padding: 30px 0 18px 0;
+    padding: 20px 0 12px 0;
     margin-bottom: 0;
-    transition: 0.3s;
+    transition: transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1), box-shadow 0.65s cubic-bezier(0.05, 0.2, 0.1, 1);
     height: 100%;
     text-align: center;
+    
+    &:hover {
+         transform: translateY(-5px);
+    }
+    
     img{
         display: block;
-        margin: auto auto 20px auto;
+        margin: auto auto 15px auto;
         max-width: 50px;
         max-height: 50px;
     }
-    .count-number{
-        margin-bottom: 5px;
-        font-size: 44px;
+    .name {
+        margin-bottom: 0;
+        font-size: 16px;
+        font-weight: 500;
     }
 }
