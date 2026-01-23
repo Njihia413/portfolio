@@ -3,8 +3,8 @@
   --zoom-in-ratio: 1;
 }
 
-.animate--zoom-in>img,
-.animate--zoom-in>svg {
+.animate--zoom-in > img,
+.animate--zoom-in > svg {
   transition: scale var(--duration-short) linear;
   scale: var(--zoom-in-ratio);
 }
@@ -25,9 +25,8 @@
 /* Animations */
 
 @media (prefers-reduced-motion: no-preference) {
-
-  .animate--ambient>img,
-  .animate--ambient>svg {
+  .animate--ambient > img,
+  .animate--ambient > svg {
     animation: animateAmbient 30s linear infinite;
   }
 
@@ -68,7 +67,9 @@
   .tmp-scroll-trigger.tmp-scroll-trigger--design-mode.tmp-fade-in,
   .tmp-scroll-trigger.tmp-scroll-trigger--design-mode.slide_in,
   .tmp-scroll-trigger.tmp-scroll-trigger--design-mode .slider,
-  .tmp-scroll-trigger:not(.tmp-scroll-trigger--offscreen).tmp-scroll-trigger--cancel {
+  .tmp-scroll-trigger:not(
+      .tmp-scroll-trigger--offscreen
+    ).tmp-scroll-trigger--cancel {
     opacity: 1;
     animation: none;
     transition: none;
@@ -140,7 +141,9 @@
 .tmp-scroll-trigger.tmp-scroll-trigger--design-mode.tmp-fade-in,
 .tmp-scroll-trigger.tmp-scroll-trigger--design-mode.slide_in,
 .tmp-scroll-trigger.tmp-scroll-trigger--design-mode .slider,
-.tmp-scroll-trigger:not(.tmp-scroll-trigger--offscreen).tmp-scroll-trigger--cancel {
+.tmp-scroll-trigger:not(
+    .tmp-scroll-trigger--offscreen
+  ).tmp-scroll-trigger--cancel {
   opacity: 1;
   animation: none;
   transition: none;
@@ -169,6 +172,14 @@
 
   to {
     opacity: 1;
+  }
+}
+
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2);
+    opacity: 0;
   }
 }
 
