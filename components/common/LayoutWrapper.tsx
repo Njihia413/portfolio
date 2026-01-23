@@ -345,7 +345,17 @@ export default function LayoutWrapper({ children }: LayoutWrapperProps) {
 
     animatedTextElements.forEach((element) => observer.observe(element));
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      animatedTextElements.forEach((element) => {
+        if (element.animation) {
+           element.animation.kill();
+        }
+        if (element.split) {
+           element.split.revert();
+        }
+      });
+    };
   }, [pathname]);
 
   useEffect(() => {
@@ -396,7 +406,17 @@ export default function LayoutWrapper({ children }: LayoutWrapperProps) {
 
     animatedTextElements.forEach((element) => observer.observe(element));
 
-    return () => observer.disconnect();
+    return () => {
+      observer.disconnect();
+      animatedTextElements.forEach((element) => {
+        if (element.animation) {
+          element.animation.kill();
+        }
+        if (element.split) {
+          element.split.revert();
+        }
+      });
+    };
   }, [pathname]);
 
   useEffect(() => {
