@@ -24,7 +24,7 @@ export default function Skills() {
         <div className="row g-2 skills-wrapper text-center row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5">
           {skills.map((item, index) => (
             <div className="col" key={index}>
-              <div className={`skill-style-border-card tmponhover tmp-scroll-trigger tmp-fade-in animation-order-${index + 1}`}>
+              <div className="skill-style-border-card tmponhover">
                 <div className="skill-inner">
                   <Image
                     alt={item.alt}
