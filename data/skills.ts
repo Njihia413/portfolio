@@ -41,6 +41,14 @@ export const skills: Skill[] = [
     name: "TypeScript",
   },
   {
+    alt: "JavaScript",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+    width: 60,
+    height: 60,
+    count: 90,
+    name: "JavaScript",
+  },
+  {
     alt: "Tailwind CSS",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg",
     width: 60,
