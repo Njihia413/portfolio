@@ -13,4 +13,5 @@ export const menuItems: MenuItem[] = [
   { label: "Experience", href: "#experience", isLink: false },
   { label: "Skills", href: "#skills", isLink: false },
   { label: "Work", href: "#work", isLink: false },
+  { label: "Services", href: "#services", isLink: false },
 ];
