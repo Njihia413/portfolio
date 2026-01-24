@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import { skills } from "@/data/skills";
@@ -5,13 +7,13 @@ import { skills } from "@/data/skills";
 
 export default function Skills() {
   return (
-    <div className="tmp-service-area tmp-section-gapBottom banner-personal-portfolio signle-section">
+    <div id="skills" className="tmp-service-area tmp-section-gapBottom banner-personal-portfolio signle-section">
       <div className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className="section-head text-center mb--50">
               <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                <span className="subtitle">Skills</span>
+                <span className="subtitle">My Skills</span>
               </div>
               <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
                 Technologies I Work With
