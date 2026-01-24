@@ -725,3 +725,27 @@
         font-weight: 500;
     }
 }
+
+.service-link-btn {
+    border-color: var(--color-primary) !important;
+    color: var(--color-primary) !important;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+
+    &:hover {
+        color: #fff !important;
+    }
+}
+
+.service-card-custom {
+    min-height: 500px;
+    justify-content: flex-start;
+    gap: 20px;
+
+    @media (max-width: 991px) {
+        min-height: auto;
+        padding-bottom: 30px;
+    }
+}
