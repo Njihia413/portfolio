@@ -14,7 +14,7 @@ export default function Services() {
           <div className="col-lg-12">
             <div className="section-head text-center mb--50">
               <div className="section-sub-title center-title tmp-scroll-trigger tmp-fade-in animation-order-1">
-                <span className="subtitle">My Services</span>
+                <span className="subtitle">Services</span>
               </div>
               <h2 className="title split-collab tmp-scroll-trigger tmp-fade-in animation-order-2">
                 What I Can Do For You
