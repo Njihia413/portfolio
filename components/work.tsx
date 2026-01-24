@@ -5,7 +5,7 @@ import { workItems } from "@/data/work";
 
 export default function Work({ }) {
   return (
-    <div id="work" className="rpp-banner-two-area ">
+    <div id="work" className="rpp-banner-two-area tmp-section-gapBottom">
       {/* Tpm Latest Portfolio Area Start */}
       <div className="custom-column-grid">
         <div className="container">
