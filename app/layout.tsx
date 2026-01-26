@@ -29,9 +29,9 @@ const parisienne = Parisienne({
 });
 
 export const metadata: Metadata = {
-  title: "Maureen Njihia | Portfolio",
+  title: "Maureen Njihia | Software Engineer ",
   description:
-    "Professional portfolio of Maureen Njihia - showcasing projects, skills, and expertise in software development and design.",
+    "Professional portfolio of Maureen Njihia - showcasing projects, skills, and expertise in software engineering.",
 };
 
 export default function RootLayout({
