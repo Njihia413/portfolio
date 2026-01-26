@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { workItems } from "@/data/work";
 
-export default function Work({ }) {
+export default function Work() {
   return (
     <div id="work" className="rpp-banner-two-area tmp-section-gapBottom">
       {/* Tpm Latest Portfolio Area Start */}
