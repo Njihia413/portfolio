@@ -4,7 +4,7 @@
   Get In Touch Wrapper
   ===============================*/
 .get-in-touch-wrapper {
-    border-radius: 20px;
+    border-radius: 5px;
     background: var(--color-gray-2);
     padding: 20px 30px;
     @media (min-width: 576px) {
@@ -15,6 +15,33 @@
     }
     @media #{variables.$sm-layout} {
         padding: 30px 20px;
+    }
+
+    .available-for-text {
+        margin-bottom: 0;
+    }
+
+    .available-services-list {
+        list-style: none;
+        padding: 0;
+        margin-top: 5px;
+
+        li {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: flex-start;
+            
+            .icon {
+                margin-right: 10px;
+                color: var(--color-primary);
+                margin-top: 3px;
+                min-width: 16px;
+                
+                i {
+                    font-size: 14px;
+                }
+            }
+        }
     }
 }
 
@@ -65,7 +92,7 @@
                 font-size: 16px;
                 color: var(--color-heading);
                 font-weight: 600;
-                border-radius: 10px;
+                border-radius: 5px;
                 border: 2px solid var(--color-border);
                 &:focus {
                     border-color: var(--color-primary);
@@ -85,7 +112,7 @@
                 font-size: 16px;
                 color: var(--color-heading);
                 font-weight: 600;
-                border-radius: 10px;
+                border-radius: 5px;
                 border: 2px solid var(--color-border);
 
                 &::placeholder {
@@ -114,6 +141,12 @@
 
         span {
             justify-content: center;
+        }
+    }
+
+    .tmp-button-here {
+        button.tmp-btn {
+            border-radius: 5px;
         }
     }
 }
