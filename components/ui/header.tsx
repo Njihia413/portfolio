@@ -6,15 +6,7 @@ import Nav from "./nav";
 import { openSidebar } from "@/utils/toggleSidebar";
 import { openMobilemenu } from "@/utils/toggleMobilemenu";
 
-interface HeaderProps {
-  darkLogo?: string;
-  lightLogo?: string;
-}
-
-export default function Header({
-  darkLogo,
-  lightLogo,
-}: HeaderProps) {
+export default function Header() {
 
   return (
     <header className="tmp-header-area-start header-one header--sticky header--transparent">
