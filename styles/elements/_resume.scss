@@ -110,3 +110,37 @@
         transform: translateY(0px);
     }
 }
+.resume-description-list {
+    max-width: 800px;
+    color: var(--color-body);
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+    
+    li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: flex-start;
+        
+        .check-icon {
+            margin-right: 10px;
+            color: var(--color-primary);
+            margin-top: 3px;
+            min-width: 16px;
+            
+            i {
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+.experience-skills-badge {
+    background: var(--background-color-2) !important;
+    color: var(--color-primary) !important;
+    border: 1px solid var(--color-border) !important;
+    padding: 5px 15px !important;
+    border-radius: 20px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+}
