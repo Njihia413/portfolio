@@ -56,7 +56,7 @@ export default function Hero() {
                 </p>
                 <div className="button-area-banner-two tmp-scroll-trigger tmp-fade-in animation-order-4">
                   <a
-                    className="tmp-btn hover-icon-reverse radius-round download-icon btn-hover-outline"
+                    className="tmp-btn hover-icon-reverse download-icon btn-hover-outline"
                     href="/assets/pdf/Maureen Njihia.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -72,12 +72,14 @@ export default function Hero() {
                     </span>
                   </a>
                   <a
-                    className="tmp-btn hover-icon-reverse radius-round btn-primary-outline ml--20"
-                    href="#contact"
+                    className="tmp-btn hover-icon-reverse btn-primary-outline ml--20"
+                    href="https://calendly.com/maureennjihia468/30min"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     style={{ marginLeft: "20px" }}
                   >
                     <span className="icon-reverse-wrapper">
-                      <span className="btn-text">Schedule a call</span>
+                      <span className="btn-text">Schedule a Call</span>
                       <span className="btn-icon">
                         <i className="fa-regular fa-arrow-right" />
                       </span>
