@@ -28,10 +28,10 @@ export default function Services() {
               key={item.id}
               className="col-lg-3 col-md-6 col-sm-12 col-12 tmp-scroll-trigger tmp-fade-in animation-order-3"
             >
-              <div className="pricing-table-col-2 tmponhover service-card-custom" style={{ transition: "transform 0.65s cubic-bezier(0.05, 0.2, 0.1, 1), box-shadow 0.65s cubic-bezier(0.05, 0.2, 0.1, 1)" }}>
-                <div className="pricing-table-header" style={{ borderBottom: "none", marginBottom: "0", paddingBottom: "0", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}>
+              <div className="pricing-table-col-2 tmponhover service-card-custom">
+                <div className="pricing-table-header">
                    <h3 className="card-title text-center mb-4">
-                     <i className={item.icon} style={{ fontSize: "50px", color: "var(--color-primary)" }}></i>
+                     <i className={`${item.icon} icon-i`}></i>
                   </h3>
                    <div className="top d-flex justify-content-center align-items-center mb-3">
                     <h4 className="text-center">
@@ -43,8 +43,8 @@ export default function Services() {
                     </h4>
                   </div>
                 </div>
-                <p className="description text-center" style={{color: "white"}}>{item.description}</p>
-                 <div className="discover-btn" style={{ marginTop: "auto", width: "100%" }}>
+                <p className="description service-desc">{item.description}</p>
+                 <div className="discover-btn">
                      <Link
                        className="tmp-btn round btn-small btn-border hover-icon-reverse service-link-btn"
                        href="https://calendly.com/maureennjihia468/30min"
