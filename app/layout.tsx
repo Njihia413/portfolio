@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Rajdhani, Rubik, Parisienne } from "next/font/google";
 import "@/styles/main.scss";
 import "@/styles/plugins/odometer.css";
-import "@/styles/plugins/odometer.css";
 import LayoutWrapper from "@/components/common/LayoutWrapper";
 import Script from "next/script";
 import { Toaster } from "sonner";
