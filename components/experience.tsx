@@ -32,11 +32,11 @@ export default function Experience() {
                     </div>
                     <h3 className="resume-title">{item.role}</h3>
                     <div className="institute">{item.company}</div>
-                    <ul className="description mt--20" style={{ maxWidth: "800px", color: "var(--color-body)", listStyle: "none", padding: 0 }}>
+                    <ul className="resume-description-list">
                       {item.description.map((desc, i) => (
-                        <li key={i} style={{ marginBottom: "10px", display: "flex", alignItems: "flex-start" }}>
-                          <span style={{ marginRight: "10px", color: "var(--color-primary)", marginTop: "3px", minWidth: "16px" }}>
-                            <i className="fa-regular fa-check-circle" style={{ fontSize: "14px" }} />
+                        <li key={i}>
+                          <span className="check-icon">
+                            <i className="fa-regular fa-check-circle" />
                           </span>
                           <span>{desc}</span>
                         </li>
@@ -44,21 +44,12 @@ export default function Experience() {
                     </ul>
                     <div className="skills-list mt--20 d-flex flex-wrap gap-2">
                       {item.skills.map((skill, skillIndex) => (
-                        <span 
-                          key={skillIndex} 
-                          className="badge"
-                          style={{
-                            background: "var(--background-color-2)",
-                            color: "var(--color-primary)",
-                            border: "1px solid var(--color-border)",
-                            padding: "5px 15px",
-                            borderRadius: "20px",
-                            fontSize: "14px",
-                            fontWeight: "500"
-                          }}
-                        >
-                          {skill}
-                        </span>
+                         <span 
+                           key={skillIndex} 
+                           className="badge experience-skills-badge"
+                         >
+                           {skill}
+                         </span>
                       ))}
                     </div>
                   </div>
