@@ -45,20 +45,22 @@ export default function Services() {
                 </div>
                 <p className="description text-center" style={{color: "white"}}>{item.description}</p>
                  <div className="discover-btn" style={{ marginTop: "auto", width: "100%" }}>
-                    <Link
-                      className="tmp-btn round btn-small btn-border hover-icon-reverse service-link-btn"
-                      href="#"
-                    >
-                      <span className="icon-reverse-wrapper">
-                        <span className="btn-text">Let&apos;s talk</span>
-                        <span className="btn-icon">
-                          <i className="fa-sharp fa-regular fa-arrow-right" />
-                        </span>
-                        <span className="btn-icon">
-                          <i className="fa-sharp fa-regular fa-arrow-right" />
-                        </span>
-                      </span>
-                    </Link>
+                     <Link
+                       className="tmp-btn round btn-small btn-border hover-icon-reverse service-link-btn"
+                       href="https://calendly.com/maureennjihia468/30min"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                     >
+                       <span className="icon-reverse-wrapper">
+                         <span className="btn-text">Schedule a Call</span>
+                         <span className="btn-icon">
+                           <i className="fa-sharp fa-regular fa-arrow-right" />
+                         </span>
+                         <span className="btn-icon">
+                           <i className="fa-sharp fa-regular fa-arrow-right" />
+                         </span>
+                       </span>
+                     </Link>
                   </div>
               </div>
             </div>
