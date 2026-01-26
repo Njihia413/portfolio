@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import { Rajdhani, Rubik, Parisienne } from "next/font/google";
 import "@/styles/main.scss";
 import "@/styles/plugins/odometer.css";
-import "react-toastify/dist/ReactToastify.css";
+import "@/styles/plugins/odometer.css";
 import LayoutWrapper from "@/components/common/LayoutWrapper";
 import Script from "next/script";
-import { ToastContainer } from "react-toastify";
+import { Toaster } from "sonner";
 
 const rajdhani = Rajdhani({
   subsets: ["latin"],
@@ -45,16 +45,7 @@ export default function RootLayout({
       <body>
         <Script src="/assets/js/smooth.js" strategy="beforeInteractive" />
         <LayoutWrapper>
-          <ToastContainer
-            position="top-right"
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-          />
+          <Toaster richColors position="top-right" />
           {children}
         </LayoutWrapper>
       </body>
