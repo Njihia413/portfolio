@@ -7,6 +7,7 @@ import Skills from "@/components/skills";
 import Work from "@/components/work";
 import Services from "@/components/services";
 import Contact from "@/components/contact";
+import Footer from "@/components/footer";
 
 
 export default function Home() {
@@ -21,7 +22,7 @@ export default function Home() {
       <Work />
       <Services />
       <Contact />
-
+      <Footer />
     </>
   );
 }
