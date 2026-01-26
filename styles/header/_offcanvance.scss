@@ -109,7 +109,7 @@
   transition:
     opacity 0.3s,
     visibility 0.3s;
-  cursor: url(/assets/images/icons/cursor-x.webp), pointer;
+  cursor: pointer;
   background: rgba(0, 0, 0, 0.8);
   backdrop-filter: blur(15px);
 }
