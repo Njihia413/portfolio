@@ -5,7 +5,7 @@ import TyperComponent from "@/components/common/TyperComponent";
 
 export default function Hero() {
   return (
-    <div className="rpp-banner-two-area">
+    <div id="about" className="rpp-banner-two-area">
       <div className="container">
         <div className="banner-two-main-wrapper">
           <div className="row align-items-center">
