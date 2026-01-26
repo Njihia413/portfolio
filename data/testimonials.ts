@@ -21,7 +21,7 @@ export const testimonials3 = [
    {
     name: "Erick Karanja",
     role: "Director, Three Modern Systems Ltd",
-    text: "",
+    text: "I previously managed Maureen Njihia who worked as a Full Stack Developer using Java, Spring Boot and Angular. She is reliable, quick to learn and consistently delivered high quality work. I'd confidently recommend her for Software Engineering roles.",
     animationOrder: "4",
   },
 ];
