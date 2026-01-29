@@ -1,6 +1,6 @@
 "use client";
 import { useState, useEffect } from "react";
-import { testimonials3 } from "@/data/testimonials";
+import { testimonials } from "@/data/testimonials";
 import { Autoplay, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import Image from "next/image";
@@ -26,7 +26,7 @@ function useIsMobile(breakpoint = 768) {
 }
 
 // Testimonial Card Component
-function TestimonialCard({ testimonial, index }: { testimonial: typeof testimonials3[0]; index: number }) {
+function TestimonialCard({ testimonial, index }: { testimonial: typeof testimonials[0]; index: number }) {
   return (
     <div
       className={`testimonial-card tmponhover style-2 tmp-scroll-trigger tmp-fade-in animation-order-${index + 1}`}
@@ -68,7 +68,7 @@ export default function Testimonials() {
             {isMobile ? (
               /* Mobile: Static Grid Layout */
               <div className="row g-4">
-                {testimonials3.map((testimonial, index) => (
+                {testimonials.map((testimonial, index) => (
                   <div className="col-12" key={index}>
                     <TestimonialCard testimonial={testimonial} index={index} />
                   </div>
@@ -103,7 +103,7 @@ export default function Testimonials() {
                   }}
                   modules={[Navigation, Autoplay]}
                 >
-                  {testimonials3.map((testimonial, index) => (
+                  {testimonials.map((testimonial, index) => (
                     <SwiperSlide className="swiper-slide" key={index}>
                       <TestimonialCard testimonial={testimonial} index={index} />
                     </SwiperSlide>
