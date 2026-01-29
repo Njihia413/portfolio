@@ -1,5 +1,5 @@
 
-export const testimonials3 = [
+export const testimonials = [
   {
     name: "Angello Obel",
     role: "CTO, Fresh Networks",
