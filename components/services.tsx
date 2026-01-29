@@ -30,10 +30,10 @@ export default function Services() {
             >
               <div className="pricing-table-col-2 tmponhover service-card-custom">
                 <div className="pricing-table-header">
-                   <h3 className="card-title text-center mb-4">
+                   <h3 className="card-title text-center mb-2">
                      <i className={`${item.icon} icon-i`}></i>
                   </h3>
-                   <div className="top d-flex justify-content-center align-items-center mb-3">
+                   <div className="top d-flex justify-content-center align-items-center">
                     <h4 className="text-center">
                       {item.title.split('|').map((part, index) => (
                         <React.Fragment key={index}>
@@ -43,7 +43,7 @@ export default function Services() {
                     </h4>
                   </div>
                 </div>
-                <p className="description service-desc">{item.description}</p>
+                <p className="description service-desc text-center">{item.description}</p>
                  <div className="discover-btn">
                      <Link
                        className="tmp-btn round btn-small btn-border hover-icon-reverse service-link-btn"
