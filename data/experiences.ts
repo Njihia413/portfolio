@@ -12,8 +12,9 @@ export const resumeItems: ExperienceItem[] = [
     role: "Full Stack Software Developer",
     period: "Jan 2025 - Jan 2026",
     description: [
-      "Designed and implemented core features of an agent-facing application, resulting in streamlined milk sales operations and improved distribution tracking efficiency.",
-      "Contributed to the implementation of the dispenser app, providing a user-friendly interface that significantly elevated the customer experience in milk purchase, leading to increased customer satisfaction and repeat business."
+      "Designed and implemented core features of an agent-facing application, resulting in streamlined milk sales operations and improved distribution tracking efficiency by 20%.",
+      "Developed user-friendly dispenser application with RESTful API integration, elevating customer experience and driving 25% increase in customer satisfaction scores.",
+      "Integrated Odoo ERP backend modules to automate inventory management and sales workflows, reducing manual data entry by 35%."
     ],
     skills: ["Odoo", "Next.js", "Nest.js", "Flutter", "Docker"]
   },
@@ -22,8 +23,8 @@ export const resumeItems: ExperienceItem[] = [
     role: "Frontend Engineer",
     period: "Sep 2024 - Present",
     description: [
-      "Led UI/UX design and prototyping for the Athens AI platform, resulting in a 25% improvement in user adoption and reduced training time by 15% through intuitive design.",
-      "Built responsive, high-performance frontend components using React and Tailwind/Bootstrap, cutting page load times by 30% and significantly enhancing user satisfaction scores.",
+      "Led UI/UX design and prototyping for the Athens AI platform, resulting in a 25% improvement in user adoption and 15% reduction in training time.",
+      "Built responsive, high-performance frontend components using React and Tailwind/Bootstrap, cutting page load times by 30% and significantly enhancing user satisfaction.",
       "Integrated RESTful APIs and worked closely with backend engineers, streamlining the data pipeline and increasing overall application stability by 99.9% uptime."
     ],
     skills: ["Next.js", "React.js", "Tailwind CSS", "Flask", "REST APIs", "PostgreSQL", "Docker"]
