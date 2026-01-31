@@ -4,6 +4,7 @@ import { Rajdhani, Rubik, Parisienne } from "next/font/google";
 import "@/styles/main.scss";
 import "@/styles/plugins/odometer.css";
 import LayoutWrapper from "@/components/common/LayoutWrapper";
+import CursorFollower from "@/components/common/CursorFollower";
 import Script from "next/script";
 import { Toaster } from "sonner";
 
@@ -45,6 +46,7 @@ export default function RootLayout({
       <body>
         <Script src="/assets/js/smooth.js" strategy="beforeInteractive" />
         <LayoutWrapper>
+          <CursorFollower />
           <Toaster richColors position="top-right" />
           {children}
         </LayoutWrapper>
