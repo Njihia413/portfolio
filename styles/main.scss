@@ -8,3 +8,4 @@
 // custom css
 @include meta.load-css("style.scss");
 @include meta.load-css("custom.scss");
+@include meta.load-css("elements/project-modal.scss");
