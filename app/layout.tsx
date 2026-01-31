@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Rajdhani, Rubik, Parisienne } from "next/font/google";
 import "@/styles/main.scss";
 import "@/styles/plugins/odometer.css";
@@ -48,6 +49,7 @@ export default function RootLayout({
           {children}
         </LayoutWrapper>
       </body>
+      <GoogleAnalytics gaId="G-L1Y0K7XSK3" />
     </html>
   );
 }
