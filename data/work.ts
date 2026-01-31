@@ -23,8 +23,8 @@ export const workItems: WorkItem[] = [
     subTitle: "Empowering Climate Literacy Through AI",
     description:
       "An interactive chatbot dedicated to environmental awareness, helping users understand climate change.",
-    problem: "The growing threat of climate change is inhibited by a significant gap in public understanding and awareness, further fueled by misinformation and the complexity of the subject. Traditional educational approaches—like scientific reports and formal classrooms—fall short in addressing the diverse learning needs of the Kenyan population, widening the climate literacy divide.",
-    solution: "Mazingira AI is an NLP-powered conversational system designed to bridge this gap. Unlike static educational methods, it fosters meaningful engagement by providing accessible, interactive climate education. The system directly addresses misinformation and adapts to different linguistic and cultural contexts to enhance climate literacy across Kenya.",
+    problem: "The growing threat of climate change is inhibited by a significant gap in public understanding and awareness, further fueled by misinformation and the complexity of the subject. Traditional educational approaches like scientific reports and formal classrooms fall short in addressing the diverse learning needs of the Kenyan population, widening the climate literacy divide.",
+    solution: "Mazingira AI is an NLP powered conversational system designed to bridge this gap. Unlike static educational methods, it fosters meaningful engagement by providing accessible, interactive climate education. The system directly addresses misinformation and adapts to different linguistic and cultural contexts to enhance climate literacy across Kenya.",
     features: [
         "Real-time conversational AI powered by NLP",
         "Localized knowledge base for Kenyan climate issues",
