@@ -2,14 +2,39 @@
 import { menuItems, MenuItem } from "@/data/menu";
 import { closeMobilemenu } from "@/utils/toggleMobilemenu";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useEffect, useRef, useState } from "react";
 
 export default function MobileMenu() {
-  const pathname = usePathname();
   const menuRef = useRef<HTMLDivElement>(null);
   const innerRef = useRef<HTMLDivElement>(null);
   const [activeParent, setActiveParent] = useState(-1);
+  const [activeId, setActiveId] = useState("");
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let current = "";
+      
+      // Iterate through menu items to find the active section
+      for (const item of menuItems) {
+        const id = item.href.replace("#", "");
+        const element = document.getElementById(id);
+        
+        if (element) {
+          const sectionTop = element.offsetTop;
+          // Check if we've scrolled past the top of this section (minus offset)
+          if (window.scrollY >= sectionTop - 180) {
+            current = id;
+          }
+        }
+      }
+      setActiveId(current);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    handleScroll(); // Initial check
+    
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
   
   useEffect(() => {
     function handleClick(event: MouseEvent) {
@@ -52,23 +77,17 @@ export default function MobileMenu() {
               <li
                 key={index}
                 className={`${item.hasDropdown ? "has-dropdown" : ""} ${
-                  item.submenu
-                    ? item.submenu.some(
-                        (elm: MenuItem) =>
-                          elm.href.split("/")[1] == pathname.split("/")[1]
-                      )
-                      ? "menu-item-open"
-                      : ""
-                    : ""
+                  activeId === item.href.replace("#", "") ? "menu-item-open" : ""
                 }`}
               >
                 {item.isLink ? (
                   <Link
                     className={`${
-                      item.href.split("/")[1] == pathname.split("/")[1]
+                      activeId === item.href.replace("#", "")
                         ? "active"
                         : ""
                     }`}
+                    style={activeId === item.href.replace("#", "") ? { color: "var(--color-primary)" } : {}}
                     href={item.href}
                     onClick={closeMobilemenu}
                   >
@@ -84,7 +103,8 @@ export default function MobileMenu() {
                         closeMobilemenu();
                       }
                     }}
-                    className={activeParent == index ? "open" : ""}
+                    className={activeId === item.href.replace("#", "") ? "active open" : ""}
+                    style={activeId === item.href.replace("#", "") ? { color: "var(--color-primary)" } : {}}
                   >
                     {item.label}
                     {item.hasDropdown && (
@@ -104,9 +124,10 @@ export default function MobileMenu() {
                       <li key={subIndex}>
                         <Link
                           className={`${
-                            subItem.href.split("/")[1] == pathname.split("/")[1]
-                              ? "active"
-                              : ""
+                             // Simplification: child items also highlight if main is active? 
+                             // Or we can leave sub-items standard.
+                             // For now keeping standard logic or similar active check if needed.
+                            ""
                           }`}
                           href={subItem.href}
                         >
