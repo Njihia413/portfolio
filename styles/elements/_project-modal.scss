@@ -1,0 +1,221 @@
+/* Project Modal Styles */
+.project-modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(15, 15, 16, 0.85);
+  backdrop-filter: blur(8px);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  animation: backdropFadeIn 0.3s forwards ease-out;
+  padding: 20px; /* Ensure some spacing on very small screens */
+
+  &.closing {
+    animation: backdropFadeOut 0.3s forwards ease-in;
+  }
+}
+
+.project-modal-container {
+  background: var(--color-dark);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  width: 90%;
+  max-width: 1000px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+  transform: scale(0.95);
+  opacity: 0;
+  animation: modalSlideUp 0.4s 0.1s forwards cubic-bezier(0.16, 1, 0.3, 1);
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    width: 95%;
+  }
+
+  /* Custom Scrollbar for the modal */
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+  &::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--color-primary);
+    border-radius: 4px;
+  }
+}
+
+.modal-close-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: rgba(0, 0, 0, 0.5); /* darkened for better visibility over images */
+  border: none;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background: var(--color-primary);
+    transform: rotate(90deg);
+  }
+}
+
+.project-modal-content {
+  padding: 0;
+}
+
+
+
+
+/* Info Section */
+.project-modal-info {
+  padding: 40px;
+  
+  @media (max-width: 768px) {
+    padding: 20px; /* Tighter padding for mobile */
+  }
+}
+
+.project-modal-header {
+  margin-bottom: 25px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 20px;
+
+  h2 {
+    font-size: 36px;
+    margin-bottom: 5px;
+    background: linear-gradient(to right, #fff, #aaa);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    @media (max-width: 768px) {
+      font-size: 24px; /* Significantly smaller for mobile */
+      margin-top: 5px;
+    }
+  }
+
+  .subtitle {
+    font-size: 18px;
+    color: var(--color-primary);
+    font-weight: 500;
+    display: block; /* Ensure it's on its own line */
+    
+    @media (max-width: 768px) {
+      font-size: 14px;
+    }
+  }
+}
+
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 30px;
+
+  .tech-badge {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 14px;
+    border-radius: 100px;
+    font-size: 13px;
+    color: #ccc;
+    transition: all 0.2s;
+
+    &:hover {
+      border-color: var(--color-primary);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+  }
+}
+
+.project-modal-body-text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #bbb;
+  margin-bottom: 40px;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+
+  .mb-8 {
+    margin-bottom: 30px;
+  }
+
+  .section-title {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 12px;
+    font-weight: 600;
+    border-left: 3px solid var(--color-primary);
+    padding-left: 12px;
+    
+    @media (max-width: 768px) {
+      font-size: 18px;
+    }
+  }
+
+  .feature-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+
+    li {
+      margin-bottom: 10px;
+      display: flex;
+      align-items: flex-start;
+      
+      .check-icon {
+          margin-right: 10px;
+          color: var(--color-primary);
+          margin-top: 3px;
+          min-width: 16px;
+          
+          i {
+              font-size: 14px;
+          }
+      }
+    }
+  }
+}
+
+@keyframes backdropFadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes backdropFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: scale(0.95) translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
