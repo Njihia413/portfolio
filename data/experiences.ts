@@ -21,7 +21,7 @@ export const resumeItems: ExperienceItem[] = [
   {
     company: "Athens AI",
     role: "Frontend Engineer",
-    period: "Sep 2024 - Jan 2026",
+    period: "Sep 2024 - Present",
     description: [
       "Led UI/UX design and prototyping for the Athens AI platform, resulting in a 25% improvement in user adoption and 15% reduction in training time.",
       "Built responsive, high-performance frontend components using React and Tailwind/Bootstrap, cutting page load times by 30% and significantly enhancing user satisfaction.",
